@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.ico">
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <title>Betviva</title>
+
+
+
+  <base href="/" />
+
+
+
+  <script>
+
+    var global = global || window;
+
+    //  var Buffer = Buffer || [];
+
+    var process = process || {
+
+      env: { DEBUG: undefined },
+
+      version: []
+
+    };
+
+  </script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W24E33BZ1Q"></script>
+
+    <script>
+
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-W24E33BZ1Q');
+
+
+
+      var idleTime = 0;
+
+
+
+      function loadData() {
+
+        // Increment the idle time counter every minute.
+
+        var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+      }
+
+
+
+      function mouseMove() {
+
+        idleTime = 0;
+
+      }
+
+
+
+      function keyPress() {
+
+          idleTime = 0;
+
+      }
+
+
+
+      function timerIncrement() {
+
+        idleTime = idleTime + 1;
+
+
+
+        if (idleTime > 30) { // 30 minutes
+
+            window.location.reload();
+
+            idleTime = 0;
+
+        }
+
+      }
+
+    </script>
+
+
+
+  <meta name="color-scheme" content="light dark" />
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta name="msapplication-tap-highlight" content="no" />
+
+
+
+  <link rel="icon" type="image/png" href="assets/icon/favicon1.jpg" />
+
+
+
+  <!-- add to homescreen for ios -->
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+  <link rel="stylesheet" type="text/css" 
+
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="styles.1788a76013b856f83883.css"></head>
+
+
+
+<body onload="loadData()" onmousemove="mouseMove()" onkeydown="keyPress()">
+
+  
+
+  <!-- cordova.js required for cordova apps (remove if not needed) -->
+
+  <!-- <script src="cordova.js"></script> -->  
+
+  <app-root></app-root>
+
+<!--Start of Tawk.to Script-->
+
+<!-- <script type="text/javascript">
+
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+
+  (function(){
+
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+
+  s1.async=true;
+
+  s1.src='https://embed.tawk.to/60410ca9385de407571c9433/1evv1iu09';
+
+  s1.charset='UTF-8';
+
+  s1.setAttribute('crossorigin','*');
+
+  s0.parentNode.insertBefore(s1,s0);
+
+  })();
+
+  Tawk_API.onLoad = function(){Tawk_API.hideWidget()};  
+
+  </script> -->
+
+  <!--End of Tawk.to Script-->
+
+
+
+  <!--Start of Freshchat Script-->
+
+  <script> 
+
+
+
+    function initFreshChat() { 
+
+      window.fcWidget.init({ 
+
+        token: "1b158a95-add9-4f0c-b68c-61507fe1aa01", 
+
+        host: "https://wchat.freshchat.com",
+
+        config: {
+
+          headerProperty: {
+
+            hideChatButton: true
+
+          }
+
+        } 
+
+      }); 
+
+    } 
+
+
+
+    function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1); 
+
+
+
+    function openWidget() {window.fcWidget.open();}
+
+    
+
+  </script> 
+
+
+
+  <!-- Meta Pixel Code -->
+
+    <script>
+
+      !function (f, b, e, v, n, t, s) {
+
+        if (f.fbq) return; n = f.fbq = function () {
+
+          n.callMethod ?
+
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+
+        };
+
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+
+        n.queue = []; t = b.createElement(e); t.async = !0;
+
+        t.src = v; s = b.getElementsByTagName(e)[0];
+
+        s.parentNode.insertBefore(t, s)
+
+      }(window, document, 'script',
+
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '3407562362858358');
+
+      fbq('track', 'PageView');
+
+    </script>
+
+    <noscript><img height="1" width="1" style="display:none"
+
+        src="https://www.facebook.com/tr?id=3407562362858358&ev=PageView&noscript=1" /></noscript>
+
+    <!-- End Meta Pixel Code -->
+
+  <!--End of Freshchat Script-->
+
+<script src="runtime-es2015.20602bfb11d6ca90e0e5.js" type="module"></script><script src="runtime-es5.20602bfb11d6ca90e0e5.js" nomodule defer></script><script src="polyfills-es5.7e8efaf9fdb82dc6464a.js" nomodule defer></script><script src="polyfills-es2015.92ff9a709c9f48a6b037.js" type="module"></script><script src="main-es2015.582847ab35f74cbd09c3.js" type="module"></script><script src="main-es5.582847ab35f74cbd09c3.js" nomodule defer></script></body>
+
+
+
+</html>
+
